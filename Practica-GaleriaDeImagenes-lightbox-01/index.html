@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Galeria de imagenes con un efecto lightbox</h1>
+
+    <ul class="galeria">
+        <li> <a href="#img1"> <img src="img/1.jpeg" alt=""> </a> </li>
+        <li> <a href="#img2"> <img src="img/2.jpeg" alt=""> </a> </li>
+        <li> <a href="#img3"> <img src="img/3.jpeg" alt=""> </a> </li>
+        <li> <a href="#img4"> <img src="img/4.jpeg" alt=""> </a> </li>
+        <li> <a href="#img5"> <img src="img/5.jpeg" alt=""> </a> </li>
+        <li> <a href="#img6"> <img src="img/6.jpeg" alt=""> </a> </li>
+        <li> <a href="#img7"> <img src="img/7.jpeg" alt=""> </a> </li>
+        <li> <a href="#img8"> <img src="img/8.jpeg" alt=""> </a> </li>
+    </ul>
+
+    <div class="modal" id="img1">
+        <h3>Imagen1</h3>
+        <div class="imagen">
+            <a href="#img8">&lt;</a>
+            <a href="#img2"> <img src="img/1.jpeg" alt=""> </a>
+            <a href="#img2">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+
+    <div class="modal" id="img2">
+        <h3>Imagen2</h3>
+        <div class="imagen">
+            <a href="#img1">&lt;</a>
+            <a href="#img3"> <img src="img/2.jpeg" alt=""> </a>
+            <a href="#img3">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+
+    <div class="modal" id="img3">
+        <h3>Imagen3</h3>
+        <div class="imagen">
+            <a href="#img2">&lt;</a>
+            <a href="#img4"> <img src="img/3.jpeg" alt=""> </a>
+            <a href="#img4">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+
+    <div class="modal" id="img4">
+        <h3>Imagen4</h3>
+        <div class="imagen">
+            <a href="#img3">&lt;</a>
+            <a href="#img5"> <img src="img/4.jpeg" alt=""> </a>
+            <a href="#img5">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+
+    <div class="modal" id="img5">
+        <h3>Imagen5</h3>
+        <div class="imagen">
+            <a href="#img4">&lt;</a>
+            <a href="#img6"> <img src="img/5.jpeg" alt=""> </a>
+            <a href="#img6">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+
+    <div class="modal" id="img6">
+        <h3>Imagen6</h3>
+        <div class="imagen">
+            <a href="#img5">&lt;</a>
+            <a href="#img7"> <img src="img/6.jpeg" alt=""> </a>
+            <a href="#img7">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+
+    <div class="modal" id="img7">
+        <h3>Imagen7</h3>
+        <div class="imagen">
+            <a href="#img6">&lt;</a>
+            <a href="#img8"> <img src="img/7.jpeg" alt=""> </a>
+            <a href="#img8">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+
+    <div class="modal" id="img8">
+        <h3>Imagen8</h3>
+        <div class="imagen">
+            <a href="#img7">&lt;</a>
+            <a href="#img1"> <img src="img/8.jpeg" alt=""> </a>
+            <a href="#img1">&gt;</a>
+        </div>
+        <a class="cerrar" href=""> X </a>
+    </div>
+
+    <div class="nota">
+
+        <p>Click en alguna imagen</p>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+body{
+    background-color: tomato;
+}
+
+.contenedor{
+    width: 350px;
+    height: 42px;
+
+    color: white;
+
+    font-size: 40px;
+    line-height: 40px;
+
+    display: flex;
+    
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    
+    overflow: hidden;
+}
+
+ul,p{
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 10px;
+
+    animation: animacion 10s infinite;
+}
+
+li{
+    margin-bottom: 2px;   
+}
+
+@keyframes animacion{
+
+    0%, 20%{
+        margin-top: 0px;
+    }
+
+    25%, 45%{
+        margin-top:-42px;
+    }
+
+    50%, 70%{
+        margin-top:-84px;
+    }
+
+    75%, 95%{
+        margin-top:-42px;
+    }
+
+    100%{
+        margin-top:0px;
+    }
+
+    
+}

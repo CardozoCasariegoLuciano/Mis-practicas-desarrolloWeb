@@ -1,0 +1,33 @@
+body
+{
+	background-color:#717d7e; 	
+}	
+
+.contenedor
+{
+	width:100%;
+	padding:0% 5%;
+	box-sizing:border-box;	
+}
+
+header
+{
+	width:300px;
+	position:relative;
+	left:42%;
+	color:#16433B;	
+}
+
+figcaption
+{
+	color: #17193D;
+	font-size:15px;
+}
+
+img
+{
+	height: 100px;
+	width: 100px;
+}
+
+

@@ -1,0 +1,51 @@
+body{
+    background-color: thistle;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    
+    width:100%;  
+    height: calc(100vh + 20px);     
+    
+    margin-top: -20px;
+
+    overflow: hidden;
+}
+
+.contenedor ul{
+
+    padding: 0px;
+    display: flex;
+    width: 400%;  /*400 porque son 4 imagenes*/
+
+    animation: cambio 20s infinite alternate;
+}
+
+.contenedor li{   
+   width: 100%;
+   list-style: none;
+}
+
+.contenedor img{
+    width: 100%;
+    height: calc(100vh + 20px);      /* para que coincida con el tamaño de toda la pantalla*/
+}
+
+@keyframes cambio{
+
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    75%{ margin-left: -200%;}
+
+    80%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+
+
+}

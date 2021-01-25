@@ -1,0 +1,38 @@
+
+body{
+    background-color: rgb(233, 183, 123);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    width: 700px;
+    height: 300px;
+    border: bisque 2px solid;   
+    
+    background-size: 100% 100%;
+
+    animation-name: banner;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner{
+
+    0%,30%{
+        background-image: url(img/1.jpg);
+        opacity: 1;
+    }
+  
+    35%,65%{
+        background-image: url(img/2.jpg);
+        opacity: 1;
+    }
+  
+    70%,100%{
+        background-image: url(img/3.jpg);
+        opacity: 1;
+    }
+}

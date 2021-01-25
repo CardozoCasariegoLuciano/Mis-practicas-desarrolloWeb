@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+    overflow: hidden;
+}
+
+.sidebarMenu{
+
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.sidebarMenu  h2{
+    text-align: center;
+    background-color: darkslategray;
+    padding: 15px;
+}
+
+.sidebarMenu  a{
+   text-decoration: none;
+   color: #fff;
+   display: block;
+   padding: 6px;
+   font-size: 20px;
+   border-bottom: 1px black solid;
+
+   transition: all .3s;
+   
+}
+
+.sidebarMenu a:hover{
+
+    background-color: rgba(47, 79, 79,.6);
+    border-left: white solid 3px;
+ }
+
+.sidebarMenu ul{
+    list-style: none;    
+    padding: 0px;
+ }
+
+
+
+ .contenido{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(62, 84, 104);
+    padding: 30px;
+    transition: all .3s;
+    box-sizing: border-box;
+ }
+
+ .menu-img{
+     cursor: pointer;
+ }
+
+ .abrir{
+    transform: translateX(250px);
+ }
