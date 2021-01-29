@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#btn-menu{
+    display: none;
+}
+
+header{
+
+    height: 60px;
+    background-color:  #b87c23;
+    color: #fff;
+
+    display: flex;
+    justify-content: flex-end;
+
+    label{
+
+        font-size: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .menu{        
+
+        ul{
+            background-color:#b87c23;
+            display: flex;
+            list-style: none;
+
+            li{
+
+                &:hover ul{
+                    display: block;
+                    position: absolute;                    
+                }
+            }
+
+            ul{
+                display: none;
+            }
+        }
+
+        a{
+
+            display: block;
+
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+
+            padding: 18px 25px;
+
+            &:hover{
+                background-color: rgba($color: #000, $alpha: .2);
+            }
+
+            span{
+                margin-left: 10px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 768px){
+
+    header{        
+    
+        label{   
+            padding-top: 7px;
+            padding-right: 10px;
+            display: block;
+        }
+
+        .menu{
+
+            transform: translateX(-100%);
+            transition: all .5s;
+
+            position: absolute;
+            top: 60px;
+            left: 0px;
+
+            width: 100%;           
+
+
+            ul{
+                display: block;
+                background-color: #555;
+
+
+                ul{
+
+                    background-color: rgba($color: #fff, $alpha: .3);
+
+                    a{
+                        padding-left: 50px;
+                    }
+                }
+
+
+                li{
+
+                    &:hover ul{
+                        display: none;
+                        position: static;
+                    }
+                }
+            }
+
+
+            a{
+
+                span{
+                    position: absolute;
+                    right: 30px;                    
+                }
+            }
+            
+
+        }  
+        
+    }
+
+    #btn-menu:checked ~ .menu{
+
+        transform: translateX(0%);
+    }
+       
+
+}
