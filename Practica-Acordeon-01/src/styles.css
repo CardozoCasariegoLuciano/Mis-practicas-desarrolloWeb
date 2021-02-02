@@ -1,0 +1,133 @@
+body {
+  background-color: cadetblue;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.nota {
+  width: 500px;
+  text-align: center;
+  background-color: crimson;
+  color: #fff;
+  padding: 20px;
+}
+
+.nota p {
+  font-size: 1.1rem;
+}
+
+.acordeonConRadio {
+  width: 70%;
+}
+
+.acordeonConRadio h2 {
+  text-align: center;
+}
+
+.acordeonConRadio input {
+  display: none;
+}
+
+.acordeonConRadio .acordeon__titulo {
+  background-color: darkkhaki;
+  display: block;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+.acordeonConRadio .acordeon__titulo img {
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+.acordeonConRadio .acordeon__contenido {
+  margin: 0px;
+  height: 0px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #bb6b6b;
+  color: #fff;
+  font-size: 1.1em;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.acordeonConRadio input:checked ~ .acordeon__contenido {
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.acordeonConCheckBox {
+  width: 70%;
+  margin-bottom: 800px;
+}
+
+.acordeonConCheckBox h2 {
+  text-align: center;
+}
+
+.acordeonConCheckBox input {
+  display: none;
+}
+
+.acordeonConCheckBox .acordeon__titulo {
+  background-color: darkkhaki;
+  display: block;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+.acordeonConCheckBox .acordeon__titulo img {
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+.acordeonConCheckBox .acordeon__contenido {
+  margin: 0px;
+  height: 0px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #bb6b6b;
+  color: #fff;
+  font-size: 1.1em;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.acordeonConCheckBox input:checked ~ .acordeon__contenido {
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

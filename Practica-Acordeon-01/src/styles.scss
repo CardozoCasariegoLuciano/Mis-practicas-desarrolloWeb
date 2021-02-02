@@ -1,0 +1,103 @@
+body{
+    background-color: cadetblue;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+section{
+    margin-bottom: 70px;  
+}
+
+.nota{
+    width: 500px;
+    text-align: center;
+
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+
+@mixin acordeonesStyles {
+    
+    width: 70%;
+
+    h2{
+        text-align: center;        
+    }
+
+    input{
+        display: none;
+    }
+
+    .acordeon__titulo{
+        background-color: darkkhaki;
+        display: block;
+
+        padding: 10px;       
+
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        position: relative;
+        cursor: pointer;
+
+        border-bottom: 1px solid rgba($color: grey, $alpha: .7);
+
+        img{
+            width: 20px;
+            position: absolute;
+
+            right: 20px;
+            top: 12px;
+        }
+    }
+
+    .acordeon__contenido{         
+
+        margin: 0px;
+        height: 0px;
+        overflow: hidden;
+        
+        box-sizing: border-box; 
+        background-color: rgb(187, 107, 107);
+        color: #fff;
+        font-size: 1.1em;
+        
+        transition: all .7s;
+        
+    }
+
+    input:checked ~ .acordeon__contenido{
+        height: auto;
+               
+        text-align: center;
+
+        
+        padding: 20px;
+    }    
+}
+
+
+
+.acordeonConRadio{
+
+    @include acordeonesStyles();
+
+}
+
+
+.acordeonConCheckBox{
+
+    @include acordeonesStyles();
+
+    margin-bottom: 800px;
+}
