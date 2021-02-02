@@ -1,0 +1,28 @@
+body {
+  background-color: antiquewhite;
+}
+
+.contenedor {
+  width: 900px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+.imagenes img {
+  width: 200px;
+  height: 200px;
+}
+
+#notebooks:checked ~ .imagenes .celular, #notebooks:checked ~ .imagenes .tablet {
+  display: none;
+}
+
+#celulares:checked ~ .imagenes .notebook, #celulares:checked ~ .imagenes .tablet {
+  display: none;
+}
+
+#tablets:checked ~ .imagenes .notebook, #tablets:checked ~ .imagenes .celular {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
