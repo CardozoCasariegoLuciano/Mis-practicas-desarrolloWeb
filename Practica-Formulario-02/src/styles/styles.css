@@ -1,0 +1,79 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(12%, #090c79), to(#00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #090c79 12%, #00d4ff 100%);
+}
+
+form {
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 20px;
+  position: relative;
+}
+
+form h2 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  width: 100%;
+  color: #fff;
+}
+
+form input {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+  background-color: rgba(238, 238, 238, 0.3);
+  color: #fff;
+}
+
+form input:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+form input:focus + .description {
+  margin-top: -110px;
+}
+
+form .btn {
+  background-color: skyblue;
+  color: #334;
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+form .btn:hover {
+  background-color: #334;
+  color: skyblue;
+}
+
+form .description {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: -72px;
+  left: 40px;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  z-index: -20;
+}
+
+form .seleccionar {
+  margin-top: -110px;
+}
+/*# sourceMappingURL=styles.css.map */

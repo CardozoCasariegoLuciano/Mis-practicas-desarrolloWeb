@@ -1,0 +1,194 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 255, 255, 0.733);
+}
+
+.contenedorGeneral{
+
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+
+    img{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 100px;        
+    }
+
+    .clipPath1{
+
+        margin-top: 100px;  
+
+        .clipPath1_img{
+
+            clip-path: inset(0px round 0px);
+            transition: all 1s;
+            
+            &:hover{
+                clip-path: inset(120px round 200px 0px 200px 0px);
+            }
+        }
+    }
+
+    .clipPath2{       
+
+        .clipPath2_img{
+
+
+            clip-path: ellipse(500px 500px at right);
+            transition: all 1s;
+            
+            &:hover{
+                clip-path: ellipse(300px 300px);
+            }
+        }
+    }
+
+    .clipPath3{       
+
+        .clipPath3_img{
+
+
+            clip-path: ellipse(500px 500px at left);
+            transition: all 1s;
+            
+            &:hover{
+                clip-path: ellipse(300px 300px);
+            }
+        }
+    }
+
+    .clipPath4{       
+
+        .clipPath4_img{
+
+
+            clip-path: ellipse(500px 500px at center);
+            transition: all 1s;
+            
+            &:hover{
+                clip-path: ellipse(300px 300px);
+            }
+        }
+    }
+
+    .clipPath5{       
+
+        .clipPath5_img{
+
+
+            clip-path: ellipse(500px 500px at top left);
+            transition: all 1s;
+            
+            &:hover{
+                clip-path: ellipse(200px 400px at bottom right);
+            }
+        }
+    }
+
+    .clipPath6{       
+
+        .clipPath6_img{
+
+
+            clip-path: ellipse(200px 200px at 25% 40%);
+            transition: all 1s;
+            
+            &:hover{
+                clip-path: ellipse(300px 300px at 70% 50%);
+            }
+        }
+    }
+
+    .clipPath7{       
+
+        .clipPath7_img{
+
+            clip-path: circle(100%);
+            transition: all 1s;
+            
+            &:hover{
+                clip-path: circle(200px at 75% 25%);
+            }
+        }
+    }
+
+    .clipPath8{       
+
+        .clipPath8_img{
+
+            transition: all 1s;
+
+            clip-path: polygon( 0% 0% , 
+                                100% 0%, 
+                                100% 100%,
+                                0% 100%
+            );
+            
+            &:hover{
+                clip-path: polygon( 20% 0% , 
+                                100% 0%, 
+                                100% 50%,
+                                50% 50%
+                                
+            );
+            
+            }
+        }
+    }
+
+    .clipPath9{       
+
+        .clipPath9_img{
+
+            transition: all 1s;
+
+            clip-path: polygon( 0% 0% , 
+                                100% 0%, 
+                                100% 100%,
+                                0% 100%
+            );
+            
+            &:hover{
+                clip-path: polygon( 50% 0% , 
+                                80% 50%, 
+                                50% 100%,
+                                20% 50%
+            );
+            
+            }
+        }
+    }
+
+
+    .clipPath10{       
+
+        .clipPath10_img{
+
+            transition: clip-path 1s;
+
+            clip-path: polygon( 20% 0%, 
+                                80% 0%,
+                                50% 50%
+
+            );
+            
+            &:hover{
+                
+                clip-path: polygon( 20% 100% , 
+                                    80% 100%, 
+                                    50% 50%,                                    
+            );
+            
+            }
+        }
+    }
+}

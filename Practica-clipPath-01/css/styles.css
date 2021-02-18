@@ -1,0 +1,156 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 255, 255, 0.733);
+}
+
+.contenedorGeneral {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedorGeneral img {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.contenedorGeneral .clipPath1 {
+  margin-top: 100px;
+}
+
+.contenedorGeneral .clipPath1 .clipPath1_img {
+  -webkit-clip-path: inset(0px round 0px);
+          clip-path: inset(0px round 0px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorGeneral .clipPath1 .clipPath1_img:hover {
+  -webkit-clip-path: inset(120px round 200px 0px 200px 0px);
+          clip-path: inset(120px round 200px 0px 200px 0px);
+}
+
+.contenedorGeneral .clipPath2 .clipPath2_img {
+  -webkit-clip-path: ellipse(500px 500px at right);
+          clip-path: ellipse(500px 500px at right);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorGeneral .clipPath2 .clipPath2_img:hover {
+  -webkit-clip-path: ellipse(300px 300px);
+          clip-path: ellipse(300px 300px);
+}
+
+.contenedorGeneral .clipPath3 .clipPath3_img {
+  -webkit-clip-path: ellipse(500px 500px at left);
+          clip-path: ellipse(500px 500px at left);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorGeneral .clipPath3 .clipPath3_img:hover {
+  -webkit-clip-path: ellipse(300px 300px);
+          clip-path: ellipse(300px 300px);
+}
+
+.contenedorGeneral .clipPath4 .clipPath4_img {
+  -webkit-clip-path: ellipse(500px 500px at center);
+          clip-path: ellipse(500px 500px at center);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorGeneral .clipPath4 .clipPath4_img:hover {
+  -webkit-clip-path: ellipse(300px 300px);
+          clip-path: ellipse(300px 300px);
+}
+
+.contenedorGeneral .clipPath5 .clipPath5_img {
+  -webkit-clip-path: ellipse(500px 500px at top left);
+          clip-path: ellipse(500px 500px at top left);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorGeneral .clipPath5 .clipPath5_img:hover {
+  -webkit-clip-path: ellipse(200px 400px at bottom right);
+          clip-path: ellipse(200px 400px at bottom right);
+}
+
+.contenedorGeneral .clipPath6 .clipPath6_img {
+  -webkit-clip-path: ellipse(200px 200px at 25% 40%);
+          clip-path: ellipse(200px 200px at 25% 40%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorGeneral .clipPath6 .clipPath6_img:hover {
+  -webkit-clip-path: ellipse(300px 300px at 70% 50%);
+          clip-path: ellipse(300px 300px at 70% 50%);
+}
+
+.contenedorGeneral .clipPath7 .clipPath7_img {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contenedorGeneral .clipPath7 .clipPath7_img:hover {
+  -webkit-clip-path: circle(200px at 75% 25%);
+          clip-path: circle(200px at 75% 25%);
+}
+
+.contenedorGeneral .clipPath8 .clipPath8_img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.contenedorGeneral .clipPath8 .clipPath8_img:hover {
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 50%, 50% 50%);
+          clip-path: polygon(20% 0%, 100% 0%, 100% 50%, 50% 50%);
+}
+
+.contenedorGeneral .clipPath9 .clipPath9_img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.contenedorGeneral .clipPath9 .clipPath9_img:hover {
+  -webkit-clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+          clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+}
+
+.contenedorGeneral .clipPath10 .clipPath10_img {
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 50% 50%);
+          clip-path: polygon(20% 0%, 80% 0%, 50% 50%);
+}
+
+.contenedorGeneral .clipPath10 .clipPath10_img:hover {
+  -webkit-clip-path: polygon(20% 100%, 80% 100%, 50% 50%);
+          clip-path: polygon(20% 100%, 80% 100%, 50% 50%);
+}
+/*# sourceMappingURL=styles.css.map */
