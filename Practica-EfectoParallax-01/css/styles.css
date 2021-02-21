@@ -1,0 +1,46 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  margin: 0px;
+  font-family: monospace;
+}
+
+.contenedor {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 400px;
+  width: 60%;
+  overflow: hidden;
+}
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  background-image: url(../img/kayle.jpg);
+  margin: 20px 0px;
+  height: 100vh;
+  z-index: -1;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titulo {
+  text-align: center;
+  color: #eee;
+  margin-top: 200px;
+}
+
+@media (max-width: 1000px) {
+  .parallax {
+    background-image: url(../img/kayle.jpg);
+    background-size: 500px 700px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
