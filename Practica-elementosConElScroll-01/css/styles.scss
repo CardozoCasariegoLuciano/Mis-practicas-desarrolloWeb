@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+
+    h1{
+        text-align: center;
+        margin: 30px 0px;
+        font-size: 3em;
+    }
+}
+
+.cajas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 100px 0px;
+}
+
+.cajas_item{
+
+    border: 1px solid #000;
+    width: 300px;
+    padding: 15px;
+    margin: 20px;    
+
+    box-shadow: rgba(0, 0, 0, 0.747) 10px 10px 20px ;
+
+    background-color: rgba(95, 158, 160, 0.534);
+
+    h3{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+.animado{
+   opacity: 0;
+    transition: all .45s;
+}
+
+
+.mostrarArriba {
+    animation: mostrarArriba 1.5s;
+}
+
+@keyframes mostrarArriba{
+
+    0%{
+        transform: translateY(80px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
