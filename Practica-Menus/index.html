@@ -13,31 +13,44 @@
       <div class="menu__conteiner">
 
         <!--item-->
-        <nav class="menu-01">
-          <a href="###" class="menu-01__logo" target="_blank">Menu-01</a>
-          <label for="menu-01__toggler" class="menu-01__toggler--label">
-            <img src="./img/icons8-menu-64.png" alt="menu icon" />
-          </label>
-          <input type="checkbox" id="menu-01__toggler" />
-          <div class="menu-01__links">
-            <ul class="menu-01__list">
-              <li><a href="###">About</a></li>
-              <li><a href="###">Works</a></li>
-              <li><a href="###">More</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="menu-01">
+          <nav class="menu-01__navegation">
+            <a href="###" class="menu-01__logo" target="_blank">Menu-01</a>
+            <label for="menu-01__toggler" class="menu-01__toggler--label">
+              <img src="./img/icons8-menu-64.png" alt="menu icon" />
+            </label>
+            <input type="checkbox" id="menu-01__toggler" />
+            <div class="menu-01__links">
+              <ul class="menu-01__list">
+                <li><a href="###">About</a></li>
+                <li><a href="###">Works</a></li>
+                <li><a href="###">More</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <main class="menu-01__content">
+            <h3>Menu-01</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id
+              reiciendis repudiandae architecto iusto esse suscipit porro
+              temporibus laboriosam. Inventore id nobis enim tenetur natus
+              dolore repudiandae totam, perspiciatis magnam eum voluptatum iure
+              modi recusandae maxime beatae cupiditate ea. Nobis.
+            </p>
+          </main>
+        </div>
         <!--end item-->
 
         <!--item-->
         <div class="menu-02">
-          <input type="checkbox" id="menu-02__toggler" checked />
-          <label for="menu-02__toggler" class="menu-02__toggler--label">
-            <img src="./img/icons8-menu-64.png" alt="menu icon" />
-          </label>
-
-          <div class="menu-02__navegation">
-            <h2 class="menu-02__title">Menu-02</h2>
+          <nav class="menu-02__navegation" id="menu-02__navegation">
+            <div class="menu-02__top-section">
+              <h2 class="menu-02__title">Menu-02</h2>
+              <label class="menu-02__label" id="menu-02__label">
+                <img src="./img/icons8-menu-64.png" alt="menu icon" />
+              </label>
+            </div>
 
             <ul>
               <li><a href="#">Productos </a></li>
@@ -45,48 +58,116 @@
               <li><a href="#">Nosotros </a></li>
               <li><a href="#">Contactanos </a></li>
             </ul>
-          </div>
-          <!--</div>-->
+          </nav>
 
-          <main class="menu-02__content">
+          <main class="menu-02__content" id="menu-02__content">
             <h3>Menu-02</h3>
-
             <p>
-              NOTA: es mucho mas facil con algo de JS, pero en este caso es solo
-              con CSS
-            </p>
-            <br />
-
-            <p>
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              (N. del T. persona que se dedica a la imprenta) desconocido usó
-              una galería de textos y los mezcló de tal manera que logró hacer
-              un libro de textos especimen. No sólo sobrevivió 500 años, sino
-              que tambien ingresó como texto de relleno en documentos
-              electrónicos, quedando esencialmente igual al original. Fue
-              popularizado en los 60s con la creación de las hojas "Letraset",
-              las cuales contenian pasajes de Lorem Ipsum, y más recientemente
-              con software de autoedición, como por ejemplo Aldus PageMaker, el
-              cual incluye versiones de Lorem Ipsum.
-            </p>
-            <p>
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              (N. del T. persona que se dedica a la imprenta) desconocido usó
-              una galería de textos y los mezcló de tal manera que logró hacer
-              un libro de textos especimen. No sólo sobrevivió 500 años, sino
-              que tambien ingresó como texto de relleno en documentos
-              electrónicos, quedando esencialmente igual al original. Fue
-              popularizado en los 60s con la creación de las hojas "Letraset",
-              las cuales contenian pasajes de Lorem Ipsum, y más recientemente
-              con software de autoedición, como por ejemplo Aldus PageMaker, el
-              cual incluye versiones de Lorem Ipsum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id
+              reiciendis repudiandae architecto iusto esse suscipit porro
+              temporibus laboriosam. Inventore id nobis enim tenetur natus
+              dolore repudiandae totam, perspiciatis magnam eum voluptatum iure
+              modi recusandae maxime beatae cupiditate ea. Nobis.
             </p>
           </main>
         </div>
+
+        <script>
+          const menu02 = document.getElementById("menu-02__label");
+          const menu02_content = document.getElementById("menu-02__content");
+          const menu02__navegation = document.getElementById("menu-02__navegation");
+
+          menu02.addEventListener("click", () => {
+            menu02_content.classList.toggle("menu-02__open");
+            menu02__navegation.classList.toggle("menu-02__close");
+          });
+        </script>
+
+        <!--end item-->
+
+        <!--item-->
+        <div class="menu-03">
+          <nav class="menu-03__navegation">
+            <input type="checkbox" id="menu-03__toggler" />
+            <label for="menu-03__toggler" class="menu-03__toggler-label">
+              <img src="img/icons8-menu-64.png" alt="menu icon" />
+            </label>
+
+            <div class="menu-03__list">
+              <ul>
+                <li><a href="###">Menu-03</a></li>
+                <li><a href="###">Productos</a></li>
+                <li><a href="###">Servicios</a></li>
+                <li><a href="###">Clientes</a></li>
+                <li><a href="###">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <main class="menu-03__content">
+            <h3>Menu-03</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id
+              reiciendis repudiandae architecto iusto esse suscipit porro
+              temporibus laboriosam. Inventore id nobis enim tenetur natus
+              dolore repudiandae totam, perspiciatis magnam eum voluptatum iure
+              modi recusandae maxime beatae cupiditate ea. Nobis.
+            </p>
+          </main>
+
+        </div>
+        <!--end item-->
+
+        <!--item-->
+        <id id="menu-04" class="menu-04">
+          <nav class="menu-04__navegation">
+            <h3 class="menu-04__title">Menu-04</h3>
+
+            <div class="menu-04__links">
+              <ul class="menu-04__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Productos</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Servicios</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Nosotros</a>
+                </li>
+              </ul>
+
+              <div  class="menu-04__icon" id="menu-04__icon">
+                <div class="menu-04__icon--uno"></div>
+                <div class="menu-04__icon--dos"></div>
+                <div class="menu-04__icon--tres"></div>
+              </div>
+            </div>
+          </nav>
+
+          <main class="menu-04__content">
+            <h3>Menu-04</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id
+              reiciendis repudiandae architecto iusto esse suscipit porro
+              temporibus laboriosam. Inventore id nobis enim tenetur natus
+              dolore repudiandae totam, perspiciatis magnam eum voluptatum iure
+              modi recusandae maxime beatae cupiditate ea. Nobis.
+            </p>
+          </main>
+        </div>
+
+        <script>
+          const menu04 = document.getElementById("menu-04");
+          const menu04__icon = document.getElementById("menu-04__icon");
+
+          menu04__icon.addEventListener("click", () => {
+            menu04.classList.toggle("menu-04__show");
+          });
+        </script>
+
         <!--end item-->
       </div>
     </div>
